@@ -261,7 +261,7 @@ setlocal EnableDelayedExpansion
 
 cls
 color 07
-title  MyEasyOptic %blank% - %blank%Maintenance %masver%
+title  Microsoft %blank%Activation %blank%Scripts %masver%
 mode 76, 30
 
 echo:
@@ -270,24 +270,22 @@ echo:
 echo:
 echo:       ______________________________________________________________
 echo:
-echo:                          MyEasyOptic - Maintenance
+echo:                 Activation Methods:
 echo:
-echo:                                Menu Principal
-echo:
-echo:             [1] AreaFSE
-echo:             [2] Ohook
-echo:             [3] KMS38
-echo:             [4] 
+echo:             [1] HWID        ^|  Windows           ^|   Permanent
+echo:             [2] Ohook       ^|  Office            ^|   Permanent
+echo:             [3] KMS38       ^|  Windows           ^|   Year 2038
+echo:             [4] Online KMS  ^|  Windows / Office  ^|    180 Days
 echo:             __________________________________________________      
 echo:
-echo:             [5] Vérifications
-echo:             [6] Dépannage
-echo:             [7] Outils
-echo:             [8] Aide
-echo:             [0] Quitter
+echo:             [5] Activation Status
+echo:             [6] Troubleshoot
+echo:             [7] Extras
+echo:             [8] Help
+echo:             [0] Exit
 echo:       ______________________________________________________________
 echo:
-call :_color2 %_White% "          " %_Green% "Selectionnez une option via le clavier [1,2,3,4,5,6,7,8,0] :"
+call :_color2 %_White% "          " %_Green% "Enter a menu option in the Keyboard [1,2,3,4,5,6,7,8,0] :"
 choice /C:123456780 /N
 set _erl=%errorlevel%
 
