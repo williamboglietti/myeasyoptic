@@ -261,7 +261,7 @@ setlocal EnableDelayedExpansion
 
 cls
 color 07
-title  Microsoft %blank%Activation %blank%Scripts %masver%
+title  MyEasyOptic %blank% - %blank%Maintenance %masver%
 mode 76, 30
 
 echo:
