@@ -1,4 +1,11 @@
 @echo off
-echo MsgBox "OK" > "%temp%\msgbox.vbs"
-start /wait %windir%\system32\wscript.exe "%temp%\msgbox.vbs"
-del "%temp%\msgbox.vbs"
+
+REM Vérifier les droits administrateur en vérifiant l'accès au dossier système
+
+mkdir "%systemdrive%\Temp\AdminCheck" >nul 2>&1
+if %errorlevel% neq 0 (
+    echo Vous n'avez pas les droits administrateur.
+) else (
+    echo Vous avez les droits administrateur.
+)
+rmdir "%systemdrive%\Temp\AdminCheck" >nul 2>&1
